@@ -93,6 +93,58 @@ body {
     color: #333;
 }
 
+.bio-highlight {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+    border-left: 4px solid #2e7d32;
+}
+
+.bio-intro {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.highlights {
+    display: grid;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    background: rgba(46, 125, 50, 0.08);
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.highlight-item:hover {
+    transform: translateX(5px);
+    background: rgba(46, 125, 50, 0.12);
+}
+
+.highlight-icon {
+    font-size: 1.5em;
+    flex-shrink: 0;
+}
+
+.highlight-item span:last-child {
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+.section-intro {
+    margin-top: 25px;
+    font-style: italic;
+    color: #555;
+}
+
 .contact-links {
     display: flex;
     gap: 25px;
