@@ -65,7 +65,8 @@
                     <div class="project-info">
                         <p class="project-type">Metasurface Simulation Acceleration via Deep Learning</p>
                         <p class="project-org">Internship · Sony Europe Limited · Stuttgart, Germany </p>
-                        <ul class="project-desc">
+                        <button class="toggle-details">▶ Show Details</button>
+                        <ul class="project-desc" style="display: none;">
                             <li>Generate dataset using RCWA methods.</li>
                             <li>Build deep learning models to accelerate simulations.</li>
                             <li>Add Fourier representations for wavelength.</li>
@@ -91,7 +92,8 @@
                             <a href="https://github.com/WenW186079/HNC_CLIP_masterthesis/blob/main/paper/presentation.pdf" target="_blank">📊 Slides</a>
                         </p>
                         <p class="project-org">Master Thesis · Seedbox Ventures, AI Research Team · Stuttgart, Germany</p>
-                        <ul class="project-desc">
+                        <button class="toggle-details">▶ Show Details</button>
+                        <ul class="project-desc" style="display: none;">
                             <li>Conducted comprehensive literature research</li>
                             <li>Data preprocessing for image and text input</li>
                             <li>Designed and implemented a contrastive loss combined with HNC and a DPO loss combined with HNC</li>
@@ -122,7 +124,8 @@
                             <a href="https://github.com/WenW186079/SpeechTechnology_FakeAudioDetection" target="_blank">📄 GitHub</a>
                         </p>
                         <p class="project-org">Course Project · University of Stuttgart</p>
-                        <ul class="project-desc">
+                        <button class="toggle-details">▶ Show Details</button>
+                        <ul class="project-desc" style="display: none;">
                             <li>Investigated language effects on fake-audio detection by generating samples with Griffin-Lim and VITS</li>
                             <li>Detected fake audio with RawNet3 and SpecRNet across eight languages</li>
                             <li>Found that detection performance varies with each generation-detection pairing</li>
@@ -146,7 +149,8 @@
                             <a href="https://github.com/WenW186079/TeamLab" target="_blank">📄 GitHub</a>
                         </p>
                         <p class="project-org">Course Project · University of Stuttgart</p>
-                        <ul class="project-desc">
+                        <button class="toggle-details">▶ Show Details</button>
+                        <ul class="project-desc" style="display: none;">
                             <li>Build TF-IDF embedding</li>
                             <li>Build decision tree and random forest models without library</li>
                             <li>Train the model from scratch</li>
@@ -173,7 +177,8 @@
                             <a href="https://github.com/WenW186079/SemanticPlausibility" target="_blank">📄 GitHub</a>
                         </p>
                         <p class="project-org">Course Project · University of Stuttgart</p>
-                        <ul class="project-desc">
+                        <button class="toggle-details">▶ Show Details</button>
+                        <ul class="project-desc" style="display: none;">
                             <li>Built two classification models—Random Forest using sentence embeddings and Decision Tree using bag-of-words features</li>
                             <li>Conducted hyperparameter tuning and evaluated model performance on three benchmarks (PAP, PEP, ADEPT)</li>
                             <li>Preprocessed text with tokenization and trained Word2Vec to generate semantic sentence vectors</li>
@@ -198,7 +203,8 @@
                     <div class="project-info">
                         <p class="project-type">IT Job Listings Analysis & Salary Trends</p>
                         <p class="project-org">Course Project · University of Stuttgart</p>
-                        <ul class="project-desc">
+                        <button class="toggle-details">▶ Show Details</button>
+                        <ul class="project-desc" style="display: none;">
                             <li>Gathered and analyzed IT job listings to uncover U.S. salary trends via web scraping and database pipelines</li>
                             <li>Collected IT job postings using XPath-based web scraping</li>
                             <li>Data preparation and querying using MongoDB</li>
@@ -233,5 +239,20 @@
     <footer>
         <p>&copy; 2025 Wen Wen</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.toggle-details').forEach(button => {
+            button.addEventListener('click', function() {
+                const details = this.nextElementSibling;
+                if (details.style.display === 'none') {
+                    details.style.display = 'block';
+                    this.textContent = '▼ Hide Details';
+                } else {
+                    details.style.display = 'none';
+                    this.textContent = '▶ Show Details';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
