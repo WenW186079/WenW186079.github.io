@@ -188,7 +188,11 @@ body {
 
 /* Projects Section */
 .projects-section {
-    margin-bottom: 80px;
+    margin-top: 60px;
+    padding: 40px;
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 50%, #e1bee7 100%);
+    border-radius: 12px;
+    border: 2px solid rgba(194, 24, 91, 0.2);
 }
 
 .projects-section h2 {
