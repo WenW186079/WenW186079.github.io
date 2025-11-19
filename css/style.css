@@ -119,14 +119,25 @@ body {
     align-items: center;
     gap: 10px;
     padding: 12px 15px;
-    background: rgba(255, 255, 255, 0.5);
     border-radius: 8px;
     transition: all 0.3s ease;
 }
 
+.highlight-item:nth-child(1) {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+}
+
+.highlight-item:nth-child(2) {
+    background: linear-gradient(135deg, #e1f5fe 0%, #b3e5fc 100%);
+}
+
+.highlight-item:nth-child(3) {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+}
+
 .highlight-item:hover {
-    background: rgba(255, 255, 255, 0.8);
     transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .highlight-item a {
