@@ -247,6 +247,21 @@ body {
     color: #000;
 }
 
+.project-links {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.project-links a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
 .project-org {
     color: #666;
     font-size: 0.9em;
