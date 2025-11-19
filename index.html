@@ -7,119 +7,304 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Wen Wen</h1>
-        <p>PhD Student in Computational Electromagnetics & Machine Learning</p>
-        <p>University of Stuttgart, Germany</p>
-    </header>
-    
-    <nav>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Wen Wen</div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a PhD student at the Institute for Microwave Engineering and Photonics (IHF) at the University of Stuttgart. My research focuses on applying machine learning and deep learning techniques to solve complex problems in computational electromagnetics, particularly in metasurface design and optimization.</p>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-item">
-            <h3>PhD in Electrical Engineering</h3>
-            <p><strong>University of Stuttgart, Germany</strong> | 2022 - Present</p>
-            <p>Focus: Machine Learning for Computational Electromagnetics</p>
-            <p>Advisor: Prof. Dr.-Ing. Thomas Eibert</p>
-        </div>
-        <div class="education-item">
-            <h3>Master of Science in Electrical Engineering</h3>
-            <p><strong>University of Stuttgart, Germany</strong> | 2019 - 2022</p>
-            <p>Specialization: High-Frequency Engineering and Photonics</p>
-        </div>
-        <div class="education-item">
-            <h3>Bachelor of Engineering</h3>
-            <p><strong>Previous Institution</strong> | 2015 - 2019</p>
-        </div>
-    </section>
-
-    <section id="research">
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Machine Learning for Electromagnetic Simulation</li>
-            <li>Deep Neural Networks for Metasurface Design</li>
-            <li>Rigorous Coupled-Wave Analysis (RCWA)</li>
-            <li>Inverse Design and Optimization</li>
-            <li>Fourier Features in Neural Networks</li>
-            <li>Multi-GPU Training for Large-Scale Problems</li>
-        </ul>
-    </section>
-
-    <section id="publications">
-        <h2>Publications & Projects</h2>
-        <div class="publication-item">
-            <h3>Neural Network Surrogate Models for RCWA Simulations</h3>
-            <p>Developing deep learning models to accelerate electromagnetic simulations of periodic structures using PyTorch and multi-GPU training.</p>
-        </div>
-        <div class="publication-item">
-            <h3>Metasurface Design Optimization</h3>
-            <p>Research on inverse design methods for metasurfaces using neural networks with Fourier feature embeddings.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Programming</h3>
-                <ul>
-                    <li>Python (PyTorch, NumPy, Matplotlib)</li>
-                    <li>MATLAB</li>
-                    <li>Git/GitHub</li>
-                </ul>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Wen Wen</h1>
+                <p class="hero-subtitle">PhD Student in Computational Electromagnetics & Machine Learning</p>
+                <p class="hero-location">University of Stuttgart, Germany</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="https://github.com/WenW186079" class="btn btn-secondary" target="_blank">GitHub</a>
+                </div>
             </div>
-            <div class="skill-category">
-                <h3>Machine Learning</h3>
-                <ul>
-                    <li>Deep Neural Networks</li>
-                    <li>Multi-GPU Training</li>
-                    <li>Model Optimization</li>
-                    <li>Fourier Features</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Electromagnetics</h3>
-                <ul>
-                    <li>RCWA (Rigorous Coupled-Wave Analysis)</li>
-                    <li>Metasurface Design</li>
-                    <li>Electromagnetic Simulation</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Tools & Platforms</h3>
-                <ul>
-                    <li>Linux/HPC Clusters</li>
-                    <li>YAML Configuration</li>
-                    <li>Data Visualization</li>
-                </ul>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I am a PhD student at the Institute for Microwave Engineering and Photonics (IHF) at the University of Stuttgart. My research focuses on applying machine learning and deep learning techniques to solve complex problems in computational electromagnetics, particularly in metasurface design and optimization.</p>
+                <p>I specialize in developing neural network surrogate models for electromagnetic simulations, with expertise in PyTorch, RCWA methods, and multi-GPU training architectures.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> <a href="mailto:st186079@stud.uni-stuttgart.de">st186079@stud.uni-stuttgart.de</a></p>
-        <p><strong>Institution:</strong> Institute for Microwave Engineering and Photonics (IHF)</p>
-        <p><strong>University:</strong> University of Stuttgart, Germany</p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/WenW186079" target="_blank">WenW186079</a></p>
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - Present</div>
+                        <h3>PhD in Electrical Engineering</h3>
+                        <h4>University of Stuttgart, Germany</h4>
+                        <ul>
+                            <li>Focus: Machine Learning for Computational Electromagnetics</li>
+                            <li>Research: Neural network surrogate models for RCWA simulations</li>
+                            <li>Advisor: Prof. Dr.-Ing. Thomas Eibert</li>
+                            <li>Institute: Microwave Engineering and Photonics (IHF)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019 - 2022</div>
+                        <h3>Master of Science in Electrical Engineering</h3>
+                        <h4>University of Stuttgart, Germany</h4>
+                        <ul>
+                            <li>Specialization: High-Frequency Engineering and Photonics</li>
+                            <li>Focus: Electromagnetic theory and simulation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2015 - 2019</div>
+                        <h3>Bachelor of Engineering</h3>
+                        <h4>Previous Institution</h4>
+                        <ul>
+                            <li>Foundation in electrical engineering principles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Wen Wen. All rights reserved.</p>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Research Experience</h2>
+            <div class="experience-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>PhD Researcher</h3>
+                        <span class="badge">2022 - Present</span>
+                    </div>
+                    <h4>Institute for Microwave Engineering and Photonics (IHF)</h4>
+                    <p><strong>University of Stuttgart</strong></p>
+                    <ul>
+                        <li>Developing deep learning models for electromagnetic simulation acceleration</li>
+                        <li>Implementing multi-GPU training pipelines for large-scale neural networks</li>
+                        <li>Applying RCWA methods for metasurface analysis</li>
+                        <li>Publishing research in computational electromagnetics and machine learning</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Research Assistant</h3>
+                        <span class="badge">2020 - 2022</span>
+                    </div>
+                    <h4>High-Frequency Engineering Lab</h4>
+                    <p><strong>University of Stuttgart</strong></p>
+                    <ul>
+                        <li>Conducted electromagnetic simulations for antenna design</li>
+                        <li>Assisted in laboratory experiments and measurements</li>
+                        <li>Contributed to research projects on photonics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Research Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🧠</div>
+                    <h3>Neural Network Surrogate Models for RCWA</h3>
+                    <p>Developing deep learning models to accelerate electromagnetic simulations of periodic structures using PyTorch and multi-GPU training architectures.</p>
+                    <div class="project-tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">RCWA</span>
+                        <span class="tag">Multi-GPU</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🔬</div>
+                    <h3>Metasurface Design Optimization</h3>
+                    <p>Research on inverse design methods for metasurfaces using neural networks with Fourier feature embeddings for improved performance.</p>
+                    <div class="project-tags">
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">Fourier Features</span>
+                        <span class="tag">Optimization</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">⚡</div>
+                    <h3>Large-Scale EM Simulation Framework</h3>
+                    <p>Building scalable computational framework for electromagnetic simulations on HPC clusters with automated data generation pipelines.</p>
+                    <div class="project-tags">
+                        <span class="tag">HPC</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Data Pipeline</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">📊</div>
+                    <h3>ML Model Training with Cosine Scheduler</h3>
+                    <p>Implementing advanced training strategies with sigmoid-cosine learning rate scheduling for improved model convergence.</p>
+                    <div class="project-tags">
+                        <span class="tag">Training</span>
+                        <span class="tag">LR Scheduling</span>
+                        <span class="tag">Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-module">
+                    <div class="skill-icon">💻</div>
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MATLAB</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Bash/Shell</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-module">
+                    <div class="skill-icon">🤖</div>
+                    <h3>Machine Learning & AI</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>PyTorch</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Neural Networks</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Multi-GPU Training</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Model Optimization</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-module">
+                    <div class="skill-icon">📡</div>
+                    <h3>Electromagnetics</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>RCWA</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Metasurface Design</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>EM Simulation</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 88%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-module">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Git/GitHub</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Linux/HPC</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>NumPy/Matplotlib</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:st186079@stud.uni-stuttgart.de">st186079@stud.uni-stuttgart.de</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🏛️</div>
+                        <div>
+                            <h4>Institution</h4>
+                            <p>Institute for Microwave Engineering and Photonics (IHF)<br>University of Stuttgart, Germany</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/WenW186079" target="_blank">github.com/WenW186079</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Wen Wen. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
