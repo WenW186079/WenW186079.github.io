@@ -209,7 +209,7 @@ body {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
 
@@ -261,8 +261,7 @@ body {
 
 .project-image img {
     width: 100%;
-    max-width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 8px;
     object-fit: cover;
 }
