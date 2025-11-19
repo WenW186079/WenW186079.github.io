@@ -259,6 +259,15 @@ body {
     font-size: 0.95em;
 }
 
+.project-desc li {
+    margin-bottom: 8px;
+}
+
+.project-desc {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
 .project-image {
     margin-bottom: 20px;
     display: flex;
@@ -270,7 +279,7 @@ body {
     height: 200px;
     border-radius: 8px;
     object-fit: contain;
-    background: #f5f5f5;
+    background: transparent;
 }
 
 .placeholder-img {
