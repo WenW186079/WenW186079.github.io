@@ -300,14 +300,17 @@
     </footer>
 
     <script>
-        // Typing effect for welcome message
-        const text = "Welcome to my personal webpage! 👋";
+        // Typing effect with slide animation for welcome message
+        const text = "Hi, I'm Wen. Welcome to my personal webpage! 👋";
         const typingElement = document.getElementById('typing-text');
         let index = 0;
         
         function typeWriter() {
             if (index < text.length) {
-                typingElement.textContent += text.charAt(index);
+                const span = document.createElement('span');
+                span.textContent = text.charAt(index);
+                span.style.animationDelay = '0s';
+                typingElement.appendChild(span);
                 index++;
                 setTimeout(typeWriter, 100); // Speed: 100ms per character
             }
