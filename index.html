@@ -21,12 +21,12 @@
     <main class="container">
         <!-- Intro Section -->
         <section class="intro">
-            <p class="welcome-message">Welcome to my personal webpage! 👋</p>
+            <p class="welcome-message" id="typing-text"></p>
             <h1 class="name">Wen Wen</h1>
             <p class="location">📍 Stuttgart, Germany</p>
-            <p class="degree">🇩🇪 MSc in Computational Linguistic, University of Stuttgart, DE</p>
-            <p class="degree">🇭🇰 MA in General Linguistics, City University of Hong Kong, HK </p>
-            <p class="degree">🇨🇳 BE in Prospecting Technology and Engineering, Northeast Petroleum University, CN </p>
+            <p class="degree">MSc in Computational Linguistic, University of Stuttgart, DE</p>
+            <p class="degree">MA in General Linguistics, City University of Hong Kong, HK </p>
+            <p class="degree">BE in Prospecting Technology and Engineering, Northeast Petroleum University, CN </p>
             
             <div class="highlights">
                 <div class="highlight-item">
@@ -40,7 +40,7 @@
                 <div class="highlight-item">
                     <span class="highlight-icon">✉️</span>
                     <a href="mailto:st186079@stud.uni-stuttgart.de">Email</a>
-                </div>pus
+                </div>
                 <div class="highlight-item">
                     <span class="highlight-icon">💼</span>
                     <a href="https://www.linkedin.com/in/wen-w-26468a26b/" target="_blank">LinkedIn</a>
@@ -300,6 +300,23 @@
     </footer>
 
     <script>
+        // Typing effect for welcome message
+        const text = "Welcome to my personal webpage! 👋";
+        const typingElement = document.getElementById('typing-text');
+        let index = 0;
+        
+        function typeWriter() {
+            if (index < text.length) {
+                typingElement.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100); // Speed: 100ms per character
+            }
+        }
+        
+        // Start typing when page loads
+        typeWriter();
+        
+        // Toggle details functionality
         document.querySelectorAll('.toggle-details').forEach(button => {
             button.addEventListener('click', function() {
                 const details = this.nextElementSibling;
