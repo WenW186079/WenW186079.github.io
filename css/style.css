@@ -70,6 +70,14 @@ body {
     background: linear-gradient(135deg, #e8f5e9 0%, #e1f5fe 100%);
 }
 
+.welcome-message {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #2e7d32;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
 .name {
     font-size: 2.5em;
     font-weight: 700;
@@ -347,7 +355,7 @@ body {
 /* Contact Section */
 .contact-section {
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 40px;
@@ -366,6 +374,30 @@ body {
     line-height: 1.7;
     margin-bottom: 25px;
     color: #333;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 40px;
+    background: #fff;
+}
+
+.comments-section h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.comments-intro {
+    font-size: 1.05em;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #666;
 }
 
 /* Footer */
