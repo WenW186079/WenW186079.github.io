@@ -76,17 +76,23 @@ body {
     color: #2e7d32;
     text-align: center;
     margin-bottom: 15px;
-    animation: fadeIn 2s ease-in;
+    animation: bounceIn 1.5s ease-out;
 }
 
-@keyframes fadeIn {
-    from {
+@keyframes bounceIn {
+    0% {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: scale(0.3) translateY(-50px);
     }
-    to {
+    50% {
         opacity: 1;
-        transform: translateY(0);
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
